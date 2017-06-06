@@ -1,3 +1,4 @@
+setup_aws()
 
 group node.epipe.group do
   action :create
