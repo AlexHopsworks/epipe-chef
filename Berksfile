@@ -4,10 +4,10 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'java'
-cookbook 'kagent', github: "hopshadoop/kagent-chef", branch: "master"
-cookbook 'hops', github: "hopshadoop/hops-hadoop-chef", branch: "master"
-cookbook 'ndb', github: "hopshadoop/ndb-chef", branch: "master"
-cookbook 'elastic', github: "hopshadoop/elasticsearch-chef", branch: "master" 
+cookbook 'kagent', github: "AlexHopsworks/kagent-chef", branch: "DELA_test"
+cookbook 'hops', github: "AlexHopsworks/hops-hadoop-chef", branch: "DELA_test"
+cookbook 'ndb', github: "AlexHopsworks/ndb-chef", branch: "DELA_test"
+cookbook 'elastic', github: "AlexHopsworks/elasticsearch-chef", branch: "DELA_test" 
 
 cookbook 'ulimit2', '~> 0.2.0'
 
