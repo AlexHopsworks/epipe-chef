@@ -3,7 +3,9 @@ dependencies:
     global:  
       - hopsworks::default
       - elastic::install
+      - janusgraph::install
   - recipe: epipe::default
     global:  
       - elastic::default
       - hops::dn
+      - janusgraph::default

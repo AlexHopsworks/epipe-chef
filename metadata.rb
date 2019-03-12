@@ -15,6 +15,7 @@ depends 'java'
 depends 'ndb'
 depends 'hops'
 depends 'elastic'
+depends 'janusgraph'
 
 recipe "epipe::install", "Installs Epipe Server"
 recipe "epipe::default", "configures Epipe Server"
