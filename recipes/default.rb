@@ -4,7 +4,7 @@ my_public_ip = my_public_ip()
 
 nn = private_recipe_ip("hops", "nn") + ":#{node['hops']['nn']['port']}"
 elastic = private_recipe_ip("elastic", "default") + ":#{node['elastic']['port']}"
-janusgraph_addr = private_recipe_ip("janusgraph", "default") + ":#{node['janusgraph']['gremlin']['port']}"
+#janusgraph_addr = private_recipe_ip("janusgraph", "default") + ":#{node['janusgraph']['gremlin']['port']}"
 
 
 # file "#{node['epipe']['base_dir']}/conf/epipe-site.xml" do
@@ -33,7 +33,7 @@ template"#{node['epipe']['base_dir']}/bin/start-epipe.sh" do
                :database => "hops",
                :meta_database => "hopsworks",
                :elastic_addr => elastic,
-               :janusgraph_addr => janusgraph_addr,
+ #              :janusgraph_addr => janusgraph_addr,
             })
 end
 
