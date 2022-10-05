@@ -3,10 +3,10 @@ include_attribute "hops"
 include_attribute "ndb"
 include_attribute "elastic"
 
-default['epipe']['version']                  = "0.17.0"
+default['epipe']['version']                  = "0.18.0"
 default['epipe']['user']                     = node['install']['user'].empty? ? node['hops']['hdfs']['user'] : node['install']['user']
 default['epipe']['user-home']                = "/home/#{node['epipe']['user']}"
-default['epipe']['url']                      = "#{node['download_url']}/epipe/#{node['platform_family']}/epipe-#{node['epipe']['version']}.tar.gz"
+default['epipe']['url']                      = "http://repo.hops.works/dev/alex/epipe/#{node['platform_family']}/epipe-#{node['epipe']['version']}.tar.gz"
 default['epipe']['systemd']                  = "true"
 default['epipe']['dir']                      = node['install']['dir'].empty? ? "/srv" : node['install']['dir']
 default['epipe']['home']                     = node['epipe']['dir'] + "/epipe-" + "#{node['epipe']['version']}"
